@@ -29,7 +29,8 @@ var login = function(url, username, passwd){
 			localStorage.setItem('token',token);
 			
 			//locar la lógica después de logarse
-			requestGETInfo("http://localhost:8080/departamentos");
+			//requestGETInfo("http://localhost:8080/departamentos");
+			location.href  = "/dpto"
 		}
 	});
 };

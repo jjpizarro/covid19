@@ -10,4 +10,8 @@ public class IndexController {
 	public String index() {
 		return "index";
 	}
+	@GetMapping("/dpto")
+	public String departamentos() {
+		return "departamentos";
+	}
 }
