@@ -43,11 +43,11 @@ var requestGETInfo = function(url){
 			Accepts: "application/json",
 			Authorization: localStorage.getItem('token')
 				
-		},
-		success:function(data){
-			//hacer algo con la respuesta
-			console.log(data);
 		}
+	}).done(function(data){
+		console.log(data);
+	}).fail(function( jqXHR, textStatus){
+		console.log("Muestra el mensaje que debes hace rlogin ");
 	});
 };
 
